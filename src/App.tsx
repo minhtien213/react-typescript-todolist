@@ -9,8 +9,6 @@ export interface IStates {
     age: number;
     address: string
   }[]
-
-  // setPeople: React.Dispatch<React.SetStateAction<IStates['people']>>
 }
 
 function App() {
@@ -19,7 +17,7 @@ function App() {
   // const [size, setSize] = useState<string | number>(28)
   // const [size, setSize] = useState<string | number>('M')
   // const [people, setPeople] = useState<{name: string; age: number; address: string}[]>([{name: 'John', age: 30, address: "QN"}])
-  const [ inputData, setInputData] = useState({name: '', age: '', address: ''}) // const inputData: { name: string; age: string; address: string}
+  // const [ inputData, setInputData] = useState({name: '', age: '', address: ''}) // const inputData: { name: string; age: string; address: string}
   const [people, setPeople] = useState<IStates['people']>([{name: 'Minh Tien', age: 30, address: "QN"}])
 
   return (
